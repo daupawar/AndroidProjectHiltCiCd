@@ -26,25 +26,12 @@ import okhttp3.mockwebserver.SocketPolicy
 import org.hamcrest.CoreMatchers.`is`
 
 @ExperimentalCoroutinesApi
-@RunWith(JUnit4::class)
 class UserApiTest {
-
-//    @Rule
-//    @JvmField
-//    val instantExecutorRule = InstantTaskExecutorRule()
-//
-//    private lateinit var service: RestService
-//
-//    private lateinit var mockWebServer: MockWebServer
-//
-//    private val dispatcher = TestCoroutineDispatcher()
-
 
     private lateinit var server: MockWebServer
     private lateinit var executor: ExecutorService
     private lateinit var retrofit: Retrofit
     private lateinit var service: RestService
-
 
     @Before
     fun createService() {

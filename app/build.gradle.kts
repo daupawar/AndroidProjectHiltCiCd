@@ -18,7 +18,7 @@ android {
         targetSdkVersion(AndroidSdk.targetSDK)
         versionCode = Versions.playStoreCode
         multiDexEnabled = true
-        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {

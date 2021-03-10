@@ -1,4 +1,4 @@
-package com.example.androidtemplatedsl.interactor
+package com.example.androidtemplatedsl.usecase
 
 import com.example.androidtemplatedsl.data.TestData
 import com.example.androidtemplatedsl.data.TestLocalDataSource
@@ -6,6 +6,7 @@ import com.example.androidtemplatedsl.data.TestRemoteDataSource
 import com.example.androidtemplatedsl.data.remote.factory.NetworkResponse
 import com.example.androidtemplatedsl.data.repository.DataRepositoryImpl
 import com.example.androidtemplatedsl.di.DataRepository
+import com.example.androidtemplatedsl.interactor.GetAllUsersCase
 import com.example.androidtemplatedsl.interactor.response.GenericError
 import com.example.androidtemplatedsl.interactor.response.UserResponse
 import com.example.androidtemplatedsl.test.util.MainCoroutineRule
