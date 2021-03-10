@@ -116,7 +116,7 @@ class UserApiTest {
         enqueueResponse(responseBody)
 
         val response = runBlocking {
-            service.getAllUsers() as NetworkResponse
+            service.getAllUsers()
         }
         assertThat(response, notNullValue())
 //        assertThat(response.data?.size, `is`(6))
